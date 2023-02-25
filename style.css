@@ -1,0 +1,37 @@
+canvas {
+    background: #AAA;
+    height: calc(100vh - 40px - 162px) !important;
+}
+
+canvas, .intro-card {
+    position:absolute;
+}
+
+.nav-item:hover h1 {
+    text-decoration: underline;
+}
+
+.intro-card {
+    display:block;
+    width: 75%;
+    height: 75%;
+    background: #FEFEFE;
+    left: 12.5%;
+    top: 17%;
+    border: 2px black solid;
+    border-radius: 50px;
+}
+
+.headshot {
+    height: 50%;
+    border: 2px black solid;
+    border-radius: 50%;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left:0;
+    height: 50px;
+    width: 100%;
+}
