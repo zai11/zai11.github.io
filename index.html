@@ -12,47 +12,59 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
 </head>
 <body class="w-100 h-100">
-    <div class="row m-0 p-5 w-100" style="background-color: #D8F3FF;">
-        <div class="col-2 text-center">
+    <div class="row d-flex justify-content-between m-0 py-5 px-1 w-100" style="background-color: #D8F3FF;">
+        <div class="col-3 text-center">
             <a class="text-reset text-decoration-none" href="#"><h1 class="fw-bold">Zaichic Turner</h1></a>
         </div>
-        <div class="col" style="width:70%;">
+        <div class="col nav-menu">
             <div class="row">
-                <div class="col-3"></div>
-                <div class="col-2">
+                <div class="col-1"></div>
+                <div class="col">
                     <a class="text-reset text-decoration-none nav-item" href="./about.html"><h1>About</h1></a>
                 </div>
-                <div class="col-2">
+                <div class="col">
                     <a class="text-reset text-decoration-none nav-item" href="./portfolio.html"><h1>Portfolio</h1></a>
                 </div>
-                <div class="col-2">
+                <div class="col">
                     <a class="text-reset text-decoration-none nav-item" href="./contact.html"><h1>Contact</h1></a>
                 </div>
-                <div class="col-3"></div>
+                <div class="col-1"></div>
             </div>
         </div>
-        <div class="col-2 text-center">
+        <div class="col-2 social-buttons">
             <!-- LinkedIn -->
-            <a class="btn btn-primary btn-lg" style="background-color: #0082ca;" href="https://www.linkedin.com/in/zaichic-turner/" role="button" target="_blank">
+            <a class="btn btn-primary btn-lg m-1" style="background-color: #0082ca;" href="https://www.linkedin.com/in/zaichic-turner/" role="button" target="_blank">
                 <i class="fa-brands fa-linkedin-in"></i>
             </a>
             <!-- Github -->
-            <a class="btn btn-primary btn-lg" style="background-color: #333; border-color: #333;" href="https://github.com/zai11" role="button" target="_blank">
+            <a class="btn btn-primary btn-lg m-1" style="background-color: #333; border-color: #333;" href="https://github.com/zai11" role="button" target="_blank">
                 <i class="fa-brands fa-github"></i>
             </a>
+        </div>
+        <div class="col-1 mx-2 hamburger">
+            <div class="dropdown">
+                <button class="btn btn-outline-dark btn-lg m-1 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./about.html">About</a></li>
+                    <li><a class="dropdown-item" href="./portfolio.html">Portfolio</a></li>
+                    <li><a class="dropdown-item" href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
         </div>
     </div>
     <div class="row bg-light">
         <div class="col-1"></div>
         <div class="col-10 position-absolute h-75 w-100">
-            <canvas class="background align-center"></canvas>
+            <canvas id="particles" class="align-center"></canvas>
             <div class="intro-card">
-                <div class="row h-100">
-                    <div class="col-5 d-flex align-items-center justify-content-center h-100">
+                <div class="row card-row">
+                    <div class="col-sm-12 col-md-5 d-flex align-items-center justify-content-center headshot-wrapper">
                         <img class="headshot" src="./images/portrait-2.jpeg" />
                     </div>
-                    <div class="col-7 d-flex align-items-center justify-content-center h-100">
-                        <p class="lead px-4 fs-2">Hi! I'm Zaichic Turner, a computer science graduate with an interest in <span class="fw-bold fst-italic">C#</span>, <span class="fw-bold fst-italic">.NET</span>, and all things <span class="fw-bold fst-italic">software engineering</span></p>
+                    <div class="col-sm-12 col-md-7 d-flex align-items-center justify-content-center text-wrapper">
+                        <p class="lead px-4 text">Hi! I'm Zaichic Turner, a computer science graduate with an interest in <span class="fw-bold fst-italic">C#</span>, <span class="fw-bold fst-italic">.NET</span>, and all things <span class="fw-bold fst-italic">software engineering</span></p>
                     </div>
                 </div>
             </div>

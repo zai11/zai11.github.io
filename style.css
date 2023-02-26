@@ -1,3 +1,7 @@
+:root {
+    --line-height-standard: 1.2;
+}
+
 canvas {
     background: #AAA;
     height: calc(100vh - 40px - 162px) !important;
@@ -22,10 +26,18 @@ canvas, .intro-card {
     border-radius: 50px;
 }
 
+.card-row {
+    height: 100%;
+}
+
 .headshot {
     height: 50%;
     border: 2px black solid;
     border-radius: 50%;
+}
+
+.lead.text {
+    font-size: 2rem;
 }
 
 .footer {
@@ -34,4 +46,97 @@ canvas, .intro-card {
     left:0;
     height: 50px;
     width: 100%;
+}
+
+.nav-menu, .social-buttons, .hamburger {
+    align-items: center;
+    justify-content: center;
+}
+
+/***************************
+        Responsive
+***************************/
+@media screen and (max-width:1142px) {
+    .nav-item h1 {
+        line-height: calc(var(--line-height-standard) * 2);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .nav-menu, .social-buttons {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .nav-menu, .social-buttons {
+        display: flex;
+    }
+
+    .hamburger {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #particles {
+        display: none;
+    }
+
+    .intro-card {
+        border: none;
+        border-radius: 0px;
+    }
+
+    .card-row {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .headshot-wrapper {
+        height: 50%;
+    }
+
+    .headshot {
+        height: 100%;
+    }
+
+    .text-wrapper {
+        height: 50%;
+    }
+
+    .card-row {
+        height: 100%;
+    }
+
+    .lead.text {
+        font-size: 1.25rem;
+    }
+    
+    /*.intro-card .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }*/
+}
+
+@media screen and (min-width: 768) {
+    #particles {
+        display: block;
+    }
+
+    .intro-card {
+        border: 2px black solid;
+        border-radius: 50px;
+    }
+    
+    .intro-card .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
